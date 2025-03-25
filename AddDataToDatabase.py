@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 from datetime import datetime
 
-# Đường dẫn đến tệp chứng chỉ của tài khoản dịch vụ Firebase
+# Đường dẫn đến tệp chứng chỉ của tài khoản dịch vụ Firebase "serviceAccountKey.json"
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': "https://faceattendacerealtime-f55c9-default-rtdb.firebaseio.com/",
